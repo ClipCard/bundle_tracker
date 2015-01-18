@@ -1,0 +1,494 @@
+NOTE: This is a chopped up output from lsregister -dump.
+Select items have been chosen from output for testing.
+
+Checking data integrity......done.
+Status: Preferences are loaded.
+Seeded System Version: ? ()
+CacheGUID: 1CE7BF34-8247-4905-9D6D-9A7961570303
+CacheSequenceNum: 340
+--------------------------------------------------------------------------------
+Container mount state: mounted
+bundle	id:            174692
+	Mach-O UUIDs:  3DFC9F34-E3FF-334D-A0BC-7F72AF4EFB56
+	sequenceNum:   129
+	installType:   0
+	appContainer:
+	dataContainer:
+	path:          /Applications/Xcode.app/Contents/Applications/Application Loader.app
+	name:          Application Loader
+	displayName:
+	itemName:
+	teamID:        0000000000
+	staticSize:    0
+	storeFront:    0
+	category:
+	identifier:    com.apple.itunes.connect.ApplicationLoader (0x80016994)
+	canonical id:  com.apple.itunes.connect.applicationloader (0x80016987)
+	vendor:
+	type:
+	version:       620.0
+	versionString: 620
+	displayVersion 3.0
+	codeInfoID:
+	mod date:      12/8/2014 17:51:48
+	reg date:      1/11/2015 23:30:14
+	type code:     'APPL'
+	creator code:  '????'
+	sys version:   10.8
+	mach sys ver:  10.8
+	execSDK ver:   10.8
+	flags:         apple-internal  has-display-name  relative-icon-path
+	item flags:    container  package  application  extension-hidden  native-app  x86_64
+	icons:         Contents/Resources/iTunesProducer.icns
+	executable:    Contents/MacOS/Application Loader
+	inode:         3530122
+	exec inode:    3530361
+	container id:  32
+	min version:   43980481888256
+	mach min ver:  43980481888256
+	properties:
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Whatever</key>
+	<true/>
+</dict>
+</plist>
+	library:       Contents/Library/
+	library items: Spotlight/MZSpotlight.mdimporter/
+	activityTypes: NOTIFICATION#:com.apple.itunes.connect.ApplicationLoader, pv-e07268dc8eb567
+	--------------------------------------------------------
+	type	id:            71352
+		uti:           com.apple.itunes-producer.itmsp
+		description:   iTunes Package
+		flags:         exported  active  apple-internal  trusted
+		icon:          Contents/Resources/ITMSP.icns
+		conforms to:   com.apple.package, public.composite-content
+		tags:          .itmsp-app
+		bindings:      com.fake.whatever, .whatever
+	--------------------------------------------------------
+	claim	id:            158588
+		name:          iTunes Package
+		rank:          Default
+		reqCaps:
+		roles:         Editor
+		flags:         apple-internal  relative-icon-path  package
+		icon:          Contents/Resources/ITMSP.icns
+		bindings:      .itmsp
+	--------------------------------------------------------
+	claim	id:            158628
+		name:
+		rank:          Default
+		reqCaps:
+		roles:         Importer
+		flags:         apple-internal  doc-type
+		icon:
+		delegate:      Spotlight/MZSpotlight.mdimporter/
+		bindings:      com.apple.itunes-producer.itmsp
+	--------------------------------------------------------
+	claim	id:            158668
+		name:          com.apple.itunes-producer.itmsp
+		rank:          Default
+		reqCaps:
+		roles:         Editor
+		flags:         apple-internal  url-type
+		icon:
+		bindings:      itmsp-app:
+--------------------------------------------------------------------------------
+Container mount state: mounted
+bundle	id:            116472
+	Mach-O UUIDs:  443602EC-ADC0-30DE-A48C-F362E63B1742, 5B5A9D78-837E-39AC-A7F0-B24993B922E5
+	sequenceNum:   334
+	installType:   0
+	appContainer:
+	dataContainer:
+	path:          /Users/gnosis/Applications/Internets/Adium.app
+	name:          Adium
+	displayName:
+	itemName:
+	teamID:
+	staticSize:    0
+	storeFront:    0
+	category:      public.app-category.social-networking
+	identifier:    com.adiumX.adiumX (0x8004ddfe)
+	canonical id:  com.adiumx.adiumx (0x80000092)
+	vendor:
+	type:
+	version:       1.5.10
+	versionString: 1.5.10
+	displayVersion 1.5.10
+	codeInfoID:
+	mod date:      10/23/2014 20:37:28
+	reg date:      1/16/2015 20:01:39
+	type code:     'APPL'
+	creator code:  'AdIM'
+	sys version:   10.6.8
+	mach sys ver:  10.6
+	execSDK ver:   10.8
+	flags:         has-display-name  relative-icon-path  quarantined
+	item flags:    container  package  application  extension-hidden  native-app  scriptable  requires-native  i386  x86_64
+	icons:         Contents/Resources/Adium.icns
+	executable:    Contents/MacOS/Adium
+	inode:         884964
+	exec inode:    886459
+	container id:  32
+	min version:   43980477693960
+	mach min ver:  43980477693952
+	library:       Contents/Library/
+	library items: Spotlight/AdiumSpotlightImporter.mdimporter/
+	activityTypes: NOTIFICATION#:com.adiumX.adiumX, pv-e2132a3a34090d
+	--------------------------------------------------------
+	type	id:            61628
+		uti:           com.adiumx.xtra
+		description:   Adium Xtra
+		flags:         exported  active  trusted
+		icon:          AdiumXtra.icns
+		conforms to:   com.apple.package, com.apple.bundle
+		tags:
+	--------------------------------------------------------
+	type	id:            61672
+		uti:           com.adiumx.plugin
+		description:   Adium plug-in
+		flags:         exported  active  trusted
+		icon:          Contents/Resources/AdiumPlugin.icns
+		conforms to:   com.adiumx.xtra
+		tags:          .adiumplugin, 'AdIM'
+	--------------------------------------------------------
+	type	id:            61716
+		uti:           com.adiumx.libpurpleplugin
+		description:   Adium Libpurple plug-in
+		flags:         exported  active  trusted
+		icon:          Contents/Resources/AdiumPlugin.icns
+		conforms to:   com.adiumx.xtra
+		tags:          .adiumlibpurpleplugin, 'AdIM'
+	--------------------------------------------------------
+	type	id:            61716
+		uti:           com.adiumx.libpurpleplugin
+		description:   Adium Libpurple plug-in
+		flags:         exported  active  trusted
+		icon:          Contents/Resources/AdiumPlugin.icns
+		conforms to:   com.apple.package
+		tags:          .fake-libpurpleplugin, 'AdIM'
+	--------------------------------------------------------
+	type	id:            61760
+		uti:           com.adiumx.messagestyle
+		description:   Adium WebKit Message View style
+		flags:         exported  active  trusted
+		icon:          Contents/Resources/AdiumMessageStyle.icns
+		conforms to:   com.adiumx.xtra
+		tags:          .adiummessagestyle, 'AIWK'
+	--------------------------------------------------------
+	type	id:            61804
+		uti:           com.adiumx.dockicon
+		description:   Adium Dock icon pack
+		flags:         exported  active  trusted
+		icon:          Contents/Resources/AdiumIcon.icns
+		conforms to:   com.adiumx.xtra
+		tags:          .adiumicon, 'AIDk'
+	--------------------------------------------------------
+	type	id:            61848
+		uti:           com.adiumx.soundset
+		description:   Adium sound set
+		flags:         exported  active  trusted
+		icon:          Contents/Resources/AdiumSoundset.icns
+		conforms to:   com.adiumx.xtra
+		tags:          .adiumsoundset, 'AISd'
+	--------------------------------------------------------
+	type	id:            61892
+		uti:           com.adiumx.emoticonset
+		description:   Adium emoticon set
+		flags:         exported  active  trusted
+		icon:          Contents/Resources/AdiumEmoticonset.icns
+		conforms to:   com.adiumx.xtra
+		tags:          .adiumemoticonset, 'AIEm'
+	--------------------------------------------------------
+	type	id:            61936
+		uti:           com.adiumx.script
+		description:   Adium script pack
+		flags:         exported  active  trusted
+		icon:          Contents/Resources/AdiumScripts.icns
+		conforms to:   com.adiumx.xtra
+		tags:          .adiumscripts, 'AIAS'
+	--------------------------------------------------------
+	type	id:            61980
+		uti:           com.adiumx.contactlistlayout
+		description:   Adium contact list layout
+		flags:         exported  active  trusted
+		icon:          Contents/Resources/AdiumListLayout.icns
+		conforms to:   com.adiumx.xtra
+		tags:          .listlayout, .adiumlistlayout, 'AILL'
+	--------------------------------------------------------
+	type	id:            62024
+		uti:           com.adiumx.contactlisttheme
+		description:   Adium contact list color theme
+		flags:         exported  active  trusted
+		icon:          Contents/Resources/AdiumListTheme.icns
+		conforms to:   com.adiumx.xtra
+		tags:          .listtheme, .adiumlisttheme, 'AILT'
+	--------------------------------------------------------
+	type	id:            62068
+		uti:           com.adiumx.statusicons
+		description:   Adium status icon pack
+		flags:         exported  active  trusted
+		icon:          Contents/Resources/AdiumStatusIcons.icns
+		conforms to:   com.adiumx.xtra
+		tags:          .adiumstatusicons, 'AISt'
+	--------------------------------------------------------
+	type	id:            62112
+		uti:           com.adiumx.serviceicons
+		description:   Adium service icon pack
+		flags:         exported  active  trusted
+		icon:          Contents/Resources/AdiumServiceIcons.icns
+		conforms to:   com.adiumx.xtra
+		tags:          .adiumserviceicons, 'AISr'
+	--------------------------------------------------------
+	type	id:            62156
+		uti:           com.adiumx.menubaricons
+		description:   Adium menu bar icons pack
+		flags:         exported  active  trusted
+		icon:          Contents/Resources/AdiumMenuBarIcons.icns
+		conforms to:   com.adiumx.xtra
+		tags:          .adiummenubaricons, 'AdMB'
+	--------------------------------------------------------
+	type	id:            62200
+		uti:           com.adiumx.xmllog
+		description:   Adium chat log
+		flags:         exported  active  trusted
+		icon:
+		conforms to:   com.apple.bundle, com.apple.package, public.data, public.content, public.text, public.message, public.xml
+		tags:          .adiumlog, .chatlog, 'AILo'
+	--------------------------------------------------------
+	type	id:            62244
+		uti:           com.adiumx.htmllog
+		description:   Adium HTML chat log
+		flags:         exported  active  trusted
+		icon:
+		conforms to:   public.data, public.html, public.text, public.content, public.message
+		tags:          .adiumhtmllog, 'AILh'
+	--------------------------------------------------------
+	claim	id:            115188
+		name:          Adium Plugin
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/AdiumPlugin.icns
+		bindings:      com.adiumx.plugin
+	--------------------------------------------------------
+	claim	id:            115228
+		name:          Adium Libpurple Plugin
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/AdiumPlugin.icns
+		bindings:      com.adiumx.libpurpleplugin
+	--------------------------------------------------------
+	claim	id:            115268
+		name:          Adium Dock Icon
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/AdiumIcon.icns
+		bindings:      com.adiumx.dockicon
+	--------------------------------------------------------
+	claim	id:            115308
+		name:          Adium Sound Set
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/AdiumSoundset.icns
+		bindings:      com.adiumx.soundset
+	--------------------------------------------------------
+	claim	id:            115348
+		name:          Adium Menu Bar Icons
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/AdiumMenuBarIcons.icns
+		bindings:      com.adiumx.menubaricons
+	--------------------------------------------------------
+	claim	id:            115388
+		name:          Adium Emoticon Set
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/AdiumEmoticonset.icns
+		bindings:      com.adiumx.emoticonset
+	--------------------------------------------------------
+	claim	id:            115428
+		name:          Adium Message Style
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/AdiumMessageStyle.icns
+		bindings:      com.adiumx.messagestyle
+	--------------------------------------------------------
+	claim	id:            115468
+		name:          Adium Scripts
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/AdiumScripts.icns
+		bindings:      com.adiumx.script
+	--------------------------------------------------------
+	claim	id:            115508
+		name:          Adium List Layout
+		rank:          Default
+		reqCaps:
+		roles:         Editor
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/AdiumListLayout.icns
+		bindings:      com.adiumx.contactlistlayout
+	--------------------------------------------------------
+	claim	id:            115548
+		name:          Adium List Theme
+		rank:          Default
+		reqCaps:
+		roles:         Editor
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/AdiumListTheme.icns
+		bindings:      com.adiumx.contactlisttheme
+	--------------------------------------------------------
+	claim	id:            115588
+		name:          Adium Status Icons
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/AdiumStatusIcons.icns
+		bindings:      com.adiumx.statusicons
+	--------------------------------------------------------
+	claim	id:            115628
+		name:          Adium Service Icons
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/AdiumServiceIcons.icns
+		bindings:      com.adiumx.serviceicons
+	--------------------------------------------------------
+	claim	id:            115668
+		name:          Adium Chat Log
+		rank:          Default
+		reqCaps:
+		roles:         Editor
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/Adium.icns
+		bindings:      com.adiumx.htmllog
+	--------------------------------------------------------
+	claim	id:            115708
+		name:          Adium Group Chat Status Icons
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/Adium.icns
+		bindings:      com.adiumx.groupchatstatusicons
+	--------------------------------------------------------
+	claim	id:            115748
+		name:          Adium Chat Log
+		rank:          Default
+		reqCaps:
+		roles:         Editor
+		flags:         relative-icon-path  package
+		icon:          Contents/Resources/Adium.icns
+		bindings:      com.adiumx.xmllog
+	--------------------------------------------------------
+	claim	id:            115788
+		name:
+		rank:          Default
+		reqCaps:
+		roles:         Importer
+		flags:         package
+		icon:
+		delegate:      Spotlight/AdiumSpotlightImporter.mdimporter/
+		bindings:      com.adiumx.htmllog, com.adiumx.xmllog
+	--------------------------------------------------------
+	claim	id:            115828
+		name:          AIM URL
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         url-type
+		icon:          generic
+		bindings:      aim:
+	--------------------------------------------------------
+	claim	id:            115868
+		name:          Yahoo! Messenger URL
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         url-type
+		icon:          generic
+		bindings:      ymsgr:, yahoo:
+	--------------------------------------------------------
+	claim	id:            115908
+		name:          Jabber URL
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         url-type
+		icon:          generic
+		bindings:      xmpp:, jabber:
+	--------------------------------------------------------
+	claim	id:            115948
+		name:          Google Talk URL
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         url-type
+		icon:          generic
+		bindings:      gtalk:
+	--------------------------------------------------------
+	claim	id:            115988
+		name:          Microsoft Network URL
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         url-type
+		icon:          generic
+		bindings:      msn:
+	--------------------------------------------------------
+	claim	id:            116028
+		name:          Twitter Reply URL
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         url-type
+		icon:          generic
+		bindings:      twitterreply:
+	--------------------------------------------------------
+	claim	id:            116068
+		name:          MySpace Service URL
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         url-type
+		icon:          generic
+		bindings:      msim:
+	--------------------------------------------------------
+	claim	id:            116108
+		name:          IRC Service URL
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         url-type
+		icon:          generic
+		bindings:      irc:
+	--------------------------------------------------------
+	claim	id:            116148
+		name:          Adium Xtra installation URL
+		rank:          Default
+		reqCaps:
+		roles:         Viewer
+		flags:         url-type
+		icon:          generic
+		bindings:      adiumxtra:

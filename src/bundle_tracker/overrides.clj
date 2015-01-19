@@ -1,6 +1,10 @@
 (ns bundle-tracker.overrides)
 
-(def ^:dynamic *description*
+(def ^{:dynamic true
+       :doc "Map of descriptions (either `description` or `uti` from a
+            LaunchServices item) to overridden value. Values should be
+            provided in English and more friendly than the provided value."}
+  *description*
   {"bundle"                               "Bundle"
    "com.apple.application-bundle"         "Application"
    "com.apple.dt.document.snapshot"       "Xcode Snapshot"

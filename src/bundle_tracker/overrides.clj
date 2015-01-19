@@ -20,6 +20,7 @@
    "com.apple.xcode.model.data-version"   "Xcode Data Version"
    "com.apple.xcode.plugin"               "Xcode Plug-in"
    "com.apple.xcode.project"              "Xcode Project"
+   "XCTest test bundle"                   "Xcode Test Bundle"
    "framework"                            "Framework"
    "localized PDF"                        "Localized PDF"
    "plug-in"                              "Plug-in"

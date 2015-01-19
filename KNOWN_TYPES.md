@@ -95,7 +95,6 @@ TinkerTool Plug-in                              | `.ttplugin`
 VMware virtual machine                          | `.vmwarevm`                       
 Virtual PC Document                             | `.vpc7`                           
 WebKit plug-in                                  | `.webplugin`                      
-XCTest test bundle                              | `.xctest`                         
 XPC Service                                     | `.xpc`                            
 Xcode Application Data Package                  | `.xcappdata`                      
 Xcode Archive                                   | `.xcarchive`                      
@@ -110,6 +109,7 @@ Xcode Playground                                | `.playground`
 Xcode Plug-in                                   | `.xcplugin`                       
 Xcode Project                                   | `.xcodeproj`, `.xcode`, `.pbproj` 
 Xcode Snapshot                                  | `.xcsnapshots`                    
+Xcode Test Bundle                               | `.xctest`                         
 Xcode Workspace                                 | `.xcworkspace`                    
 iLifeMediaBrowser plug-In                       | `.ilmbplugin`                     
 iMovie Library                                  | `.imovielibrary`                  

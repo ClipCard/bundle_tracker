@@ -6,13 +6,21 @@
             [bundle-tracker.markdown :as markdown])
   (:gen-class))
 
-(defn pretty-print-edn [x]
+(defn pretty-print-edn
+  ^{:doc "Returns pretty-printed `x` in EDN notation"
+    :tag java.lang.String}
+  [x]
   (with-out-str (pprint x)))
 
-(defn pretty-print-json [x]
+(defn pretty-print-json
+  ^{:doc "Returns pretty-printed `x` in JSON notation"
+    :tag java.lang.String}
+  [x]
   (json/generate-string x {:pretty true}))
 
-(defn save [types]
+(defn save!
+  ^{:doc "Saves `types` as EDN, JSON and Markdown"}
+  [types]
   (println "Saving known_types.edn")
   (spit "known_types.edn" (pretty-print-edn types))
 
@@ -24,12 +32,16 @@
         md (str "# Known bundle types #\n\n" table "\n")]
     (spit "KNOWN_TYPES.md" md)))
 
-(defn -main [& args]
+(defn -main
+  ^{:doc "Track bundles on local Mac. Either outputs pretty-printed
+         types on local system (plus known types) or stores detected
+         types as additional known types."}
+  [& args]
   (let [opts (into #{} args)
         save? (opts ":save")
         dump (ls/ls-dump)
         types (bundle/ls-dump->bundle-types dump)]
     (if save?
-        (save types)
+        (save! types)
         (pprint types))
     (System/exit 0)))

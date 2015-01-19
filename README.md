@@ -28,6 +28,10 @@ To run the Bundle Tracker, you need [Leiningen](http://leiningen.org/) (the Cloj
 brew install leiningen
 ```
 
+## Compatibility ##
+
+Bundle Tracker has been tested on OS X 10.10.x ("Yosemite"). It's possible that LaunchServices versions from earlier OS X releases are incompatible. Bug reports and corrections are welcome!
+
 ## Contributing ##
 
 The simplest way to contribute is to run the tracker on your own Mac, and open a Pull Request with the changes produced by running it.

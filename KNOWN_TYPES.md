@@ -18,15 +18,18 @@ Adium sound set                                 | `.adiumsoundset`
 Adium status icon pack                          | `.adiumstatusicons`               
 Aperture Library                                | `.aplibrary`                      
 App Store Download                              | `.appdownload`                    
+Application                                     | `.app`                            
 Application and System Extension                | `.appex`                          
 Automator Action                                | `.action`                         
 Automator Conversion Action                     | `.caction`                        
 Automator Data Type Definition                  | `.definition`                     
 Automator Workflow Document                     | `.workflow`                       
+Bundle                                          | `.bundle`                         
 Dashboard widget                                | `.wdgt`                           
 Drummer Library                                 | `.glibb`                          
 Electronic Publication Folder (ePub)            | `.epub`                           
 Electronic Publication Folder (iBooks)          | `.ibooks`                         
+Framework                                       | `.framework`                      
 GPU Trace                                       | `.gputrace`                       
 GarageBand Project                              | `.band`, `.gbproj`                
 Growl Display Plugin                            | `.growlview`                      
@@ -36,10 +39,12 @@ Installer distribution                          | `.distz`, `.dist`
 Installer package                               | `.mpkg`, `.pkg`                   
 Interface Builder Compiled Storyboard Document  | `.storyboardc`                    
 Interface Builder Plug-in                       | `.ibplugin`                       
+Interface Builder file                          | `.nib`                            
 Keynote Presentation                            | `.key`, `.key-tef`                
 Keynote Theme                                   | `.kth`                            
 Keynote document                                | `.key`, `.key-tef`                
 Keynote theme                                   | `.kth`                            
+Localized PDF                                   | `.lpdf`                           
 Logic Project                                   | `.logic`                          
 Logic X Project                                 | `.logicx`                         
 Magic GarageBand Template                       | `.wand`                           
@@ -64,10 +69,12 @@ Paparazzi! Bookmark Importer                    | `.pzbmi`
 Parallels VM package                            | `.pvm`                            
 Pass                                            | `.pkpass`                         
 Photo Library                                   | `.photolibrary`                   
+Plug-in                                         | `.plugin`                         
 PlugInKit plug-in                               | `.pluginkit`                      
 QuickLook preview generator                     | `.qlgenerator`                    
 QuickTime Player Composition                    | `.qtpxcomposition`                
 Quicksilver Plug-in                             | `.qsplugin`                       
+Rich Text Format                                | `.rtfd`                           
 Screen Saver                                    | `.saver`                          
 Screen Slide Saver                              | `.slidesaver`                     
 Script bundle                                   | `.scptd`                          
@@ -91,23 +98,19 @@ WebKit plug-in                                  | `.webplugin`
 XCTest test bundle                              | `.xctest`                         
 XPC Service                                     | `.xpc`                            
 Xcode Application Data Package                  | `.xcappdata`                      
+Xcode Archive                                   | `.xcarchive`                      
+Xcode Data Mapping                              | `.xcmappingmodel`                 
+Xcode Data Version                              | `.xcdatamodeld`                   
+Xcode Debug Symbols                             | `.dsym`                           
+Xcode Development Plug-in                       | `.dvtplugin`                      
+Xcode Docset                                    | `.docset`                         
+Xcode IDE Plug-in                               | `.ideplugin`                      
+Xcode Model Data                                | `.xcdatamodel`                    
 Xcode Playground                                | `.playground`                     
-bundle                                          | `.bundle`                         
-com.apple.application-bundle                    | `.app`                            
-com.apple.dt.document.snapshot                  | `.xcsnapshots`                    
-com.apple.dt.document.workspace                 | `.xcworkspace`                    
-com.apple.dt.dvt.plug-in                        | `.dvtplugin`                      
-com.apple.dt.ide.plug-in                        | `.ideplugin`                      
-com.apple.interfacebuilder.document             | `.nib`                            
-com.apple.xcode.archive                         | `.xcarchive`                      
-com.apple.xcode.docset                          | `.docset`                         
-com.apple.xcode.dsym                            | `.dsym`                           
-com.apple.xcode.model.data                      | `.xcdatamodel`                    
-com.apple.xcode.model.data-mapping              | `.xcmappingmodel`                 
-com.apple.xcode.model.data-version              | `.xcdatamodeld`                   
-com.apple.xcode.plugin                          | `.xcplugin`                       
-com.apple.xcode.project                         | `.xcodeproj`, `.xcode`, `.pbproj` 
-framework                                       | `.framework`                      
+Xcode Plug-in                                   | `.xcplugin`                       
+Xcode Project                                   | `.xcodeproj`, `.xcode`, `.pbproj` 
+Xcode Snapshot                                  | `.xcsnapshots`                    
+Xcode Workspace                                 | `.xcworkspace`                    
 iLifeMediaBrowser plug-In                       | `.ilmbplugin`                     
 iMovie Library                                  | `.imovielibrary`                  
 iMovie Theater                                  | `.theater`                        
@@ -116,6 +119,3 @@ iTunes Extra                                    | `.ite`
 iTunes LP                                       | `.itlp`                           
 iTunes Package                                  | `.itmsp-app`                      
 iTunes Visual Plugin                            | `.hvpl`                           
-localized PDF                                   | `.lpdf`                           
-plug-in                                         | `.plugin`                         
-rich text with attachments (RTFD)               | `.rtfd`                           

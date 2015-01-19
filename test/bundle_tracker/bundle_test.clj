@@ -1,6 +1,7 @@
 (ns bundle-tracker.bundle-test
   (:use midje.sweet)
-  (:require [bundle-tracker.bundle :refer :all]))
+  (:require [bundle-tracker.bundle :refer :all]
+            [bundle-tracker.overrides :as overrides]))
 
 (def output (slurp "fixtures/lsregister_dump.txt"))
 
@@ -14,4 +15,14 @@
 
     (fact "it merges extension sets for the same description"
       (bundle-types "Adium Libpurple plug-in")
-      => #{".adiumlibpurpleplugin" ".fake-libpurpleplugin"})))
+      => #{".adiumlibpurpleplugin" ".fake-libpurpleplugin"})
+
+    (fact "it merges detected extensions with known types"
+      (binding [*known-types* {"Adium chat log" #{".fake-log"}}]
+        (let [bundle-types- (ls-dump->bundle-types output)]
+          (bundle-types- "Adium chat log") => #{".fake-log" ".adiumlog" ".chatlog"})))
+
+    (fact "it overrides select descriptions"
+      (binding [overrides/*description* {"Adium chat log" "Overridden"}]
+        (let [bundle-types- (ls-dump->bundle-types output)]
+          (bundle-types- "Overridden") => #{".adiumlog" ".chatlog"})))))

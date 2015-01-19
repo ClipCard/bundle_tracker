@@ -14,7 +14,7 @@ For simplicity, we'll refer to both types as "bundles"; for the purposes of deve
 
 On OS X, it is possible to access the LaunchServices database and determine that a directory conforms to one of the bundle types on the system. On other platforms, typically the only metadata available will be a directory name extension. A directory named "Frobnicator.app" is not guaranteed to be a Mac application, but it probably is.
 
-The purpose of this project is to crowd-source evidence-based detection by running the same tracker on multiple Mac systems, and collecting the cumulative listings to as static resources to be shared. For now, this means a mapping of type descriptions to directory name extensions. These listings can be used by other projects to provide more intelligent handling of directories that are likely to be bundles.
+The purpose of this project is to crowd-source evidence-based detection by running the same tracker on multiple Mac systems, and collecting the cumulative listings as static resources to be shared. For now, this means a mapping of type descriptions to directory name extensions. These listings can be used by other projects to provide more intelligent handling of directories that are likely to be bundles.
 
 Bundle Tracker works by reading a dump from the local LaunchServices database, identifying locally registered directory name extensions which are treated as bundles.
 

@@ -21,7 +21,9 @@
   (let [opts (into #{} args)
         save? (opts ":save")
         dump (ls/ls-dump)
-        types (bundle/ls-dump->bundle-types dump)]
+        known-types (read-string (slurp "known_types.edn"))
+        current-types (bundle/ls-dump->bundle-types dump)
+        types (into (sorted-map) (bundle/merge-sets known-types current-types))]
     (if save?
         (save types)
         (pprint types))

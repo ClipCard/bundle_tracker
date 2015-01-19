@@ -5,4 +5,5 @@
   :plugins [[lein-midje "3.0.0"]]
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [midje "1.6.3"]
-                 [cheshire "5.4.0"]])
+                 [cheshire "5.4.0"]
+                 [doric "0.9.0"]])

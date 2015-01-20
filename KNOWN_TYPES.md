@@ -33,6 +33,8 @@ Dashboard widget                                | `.wdgt`
 Drummer Library                                 | `.glibb`                          
 Electronic Publication Folder (ePub)            | `.epub`                           
 Electronic Publication Folder (iBooks)          | `.ibooks`                         
+Final Cut Pro Cache                             | `.fcpcache`                       
+Final Cut Pro Library                           | `.fcpbundle`                      
 Framework                                       | `.framework`                      
 GPU Trace                                       | `.gputrace`                       
 GarageBand Project                              | `.band`, `.gbproj`                
@@ -44,10 +46,8 @@ Installer package                               | `.mpkg`, `.pkg`
 Interface Builder Compiled Storyboard Document  | `.storyboardc`                    
 Interface Builder Plug-in                       | `.ibplugin`                       
 Interface Builder file                          | `.nib`                            
-Keynote Document                                | `.key`, `.key-tef`                
 Keynote Presentation                            | `.key`, `.key-tef`                
 Keynote Theme                                   | `.kth`                            
-Keynote document                                | `.key`, `.key-tef`                
 Keynote theme                                   | `.kth`                            
 Localized PDF                                   | `.lpdf`                           
 Logic Project                                   | `.logic`                          
@@ -123,8 +123,6 @@ Xcode Project                                   | `.xcodeproj`, `.xcode`, `.pbpr
 Xcode Snapshot                                  | `.xcsnapshots`                    
 Xcode Test Bundle                               | `.xctest`                         
 Xcode Workspace                                 | `.xcworkspace`                    
-com.apple.finalcutprocache                      | `.fcpcache`                       
-com.apple.finalcutprolibrary                    | `.fcpbundle`                      
 iBooks Author Book                              | `.book`, `.iba`                   
 iBooks Author Template                          | `.booktemplate`, `.ibatemplate`   
 iLifeMediaBrowser plug-In                       | `.ilmbplugin`                     

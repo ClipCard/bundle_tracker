@@ -11,6 +11,8 @@
    "com.apple.dt.document.workspace"      "Xcode Workspace"
    "com.apple.dt.dvt.plug-in"             "Xcode Development Plug-in"
    "com.apple.dt.ide.plug-in"             "Xcode IDE Plug-in"
+   "com.apple.finalcutprocache"           "Final Cut Pro Cache"
+   "com.apple.finalcutprolibrary"         "Final Cut Pro Library"
    "com.apple.interfacebuilder.document"  "Interface Builder file"
    "com.apple.xcode.archive"              "Xcode Archive"
    "com.apple.xcode.docset"               "Xcode Docset"
@@ -22,6 +24,8 @@
    "com.apple.xcode.project"              "Xcode Project"
    "XCTest test bundle"                   "Xcode Test Bundle"
    "framework"                            "Framework"
+   "Keynote Document"                     "Keynote Presentation"
+   "Keynote document"                     "Keynote Presentation"
    "localized PDF"                        "Localized PDF"
    "plug-in"                              "Plug-in"
    "rich text with attachments (RTFD)"    "Rich Text Format"})

@@ -103,7 +103,7 @@
     acc))
 
 (defn ls-dump->bundle-types
-  ^{:arglists [dump]
+  ^{:arglists '([dump])
     :doc "Produces a sequence of bundle types `[description extensions]` for
          a LaunchServices dump."
     :tag clojure.lang.ASeq}

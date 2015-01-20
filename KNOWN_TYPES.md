@@ -2,6 +2,8 @@
 
 Description                                     | Extensions                        
 ----------------------------------------------- | ----------------------------------
+1Password 3 Agile Keychain                      | `.agilekeychain`                  
+1Password Vault                                 | `.opvault`                        
 AVCHD Collection                                | `.avchd`                          
 Adium Dock icon pack                            | `.adiumicon`                      
 Adium Libpurple plug-in                         | `.adiumlibpurpleplugin`           
@@ -16,6 +18,7 @@ Adium script pack                               | `.adiumscripts`
 Adium service icon pack                         | `.adiumserviceicons`              
 Adium sound set                                 | `.adiumsoundset`                  
 Adium status icon pack                          | `.adiumstatusicons`               
+Alfred Preferences                              | `.alfredpreferences`              
 Aperture Library                                | `.aplibrary`                      
 App Store Download                              | `.appdownload`                    
 Application                                     | `.app`                            
@@ -25,10 +28,13 @@ Automator Conversion Action                     | `.caction`
 Automator Data Type Definition                  | `.definition`                     
 Automator Workflow Document                     | `.workflow`                       
 Bundle                                          | `.bundle`                         
+Capo Document                                   | `.capobundle`                     
 Dashboard widget                                | `.wdgt`                           
 Drummer Library                                 | `.glibb`                          
 Electronic Publication Folder (ePub)            | `.epub`                           
 Electronic Publication Folder (iBooks)          | `.ibooks`                         
+Final Cut Pro Cache                             | `.fcpcache`                       
+Final Cut Pro Library                           | `.fcpbundle`                      
 Framework                                       | `.framework`                      
 GPU Trace                                       | `.gputrace`                       
 GarageBand Project                              | `.band`, `.gbproj`                
@@ -42,7 +48,6 @@ Interface Builder Plug-in                       | `.ibplugin`
 Interface Builder file                          | `.nib`                            
 Keynote Presentation                            | `.key`, `.key-tef`                
 Keynote Theme                                   | `.kth`                            
-Keynote document                                | `.key`, `.key-tef`                
 Keynote theme                                   | `.kth`                            
 Localized PDF                                   | `.lpdf`                           
 Logic Project                                   | `.logic`                          
@@ -50,7 +55,11 @@ Logic X Project                                 | `.logicx`
 Magic GarageBand Template                       | `.wand`                           
 MagicMentor GarageBand Template                 | `.mwand`                          
 Mail Stationery                                 | `.mailstationery`                 
+MainStage Concert                               | `.concert`, `.concert3`           
+MainStage Device                                | `.device`                         
+MainStage Layout                                | `.layout`                         
 MainStage Patch                                 | `.patch`                          
+MainStage Workspace Grouped Control             | `.mob`                            
 Microsoft Excel type library                    | `.tlb`                            
 Migrated Aperture Library                       | `.migratedaplibrary`              
 Migrated Photo Library                          | `.migratedphotolibrary`           
@@ -74,12 +83,15 @@ PlugInKit plug-in                               | `.pluginkit`
 QuickLook preview generator                     | `.qlgenerator`                    
 QuickTime Player Composition                    | `.qtpxcomposition`                
 Quicksilver Plug-in                             | `.qsplugin`                       
+Remote Codec                                    | `.remotecodec`                    
 Rich Text Format                                | `.rtfd`                           
 Screen Saver                                    | `.saver`                          
 Screen Slide Saver                              | `.slidesaver`                     
 Script bundle                                   | `.scptd`                          
 Sequel Pro Bundle                               | `.spbundle`                       
 Sequel Pro Session                              | `.spfs`                           
+Simulator Device Type                           | `.simdevicetype`                  
+Simulator Runtime                               | `.simruntime`                     
 Sketch Drawing                                  | `.sketch`                         
 Skype Chat Style                                | `.skypechatstyle`                 
 Skype Emoticon Set                              | `.skypeemoticonset`               
@@ -111,6 +123,8 @@ Xcode Project                                   | `.xcodeproj`, `.xcode`, `.pbpr
 Xcode Snapshot                                  | `.xcsnapshots`                    
 Xcode Test Bundle                               | `.xctest`                         
 Xcode Workspace                                 | `.xcworkspace`                    
+iBooks Author Book                              | `.book`, `.iba`                   
+iBooks Author Template                          | `.booktemplate`, `.ibatemplate`   
 iLifeMediaBrowser plug-In                       | `.ilmbplugin`                     
 iMovie Library                                  | `.imovielibrary`                  
 iMovie Theater                                  | `.theater`                        

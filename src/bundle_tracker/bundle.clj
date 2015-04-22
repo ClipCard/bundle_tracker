@@ -1,12 +1,13 @@
 (ns bundle-tracker.bundle
-  (:require [bundle-tracker.launch-services :as ls]
+  (:require [clojure.java.io :as io]
+            [bundle-tracker.launch-services :as ls]
             [bundle-tracker.overrides :as overrides]))
 
 (def ^{:dynamic true
        :doc "Refers current state of known types. This state will be used
             to produce additive changes as users run the project."}
   *known-types*
-  (read-string (slurp "known_types.edn")))
+  (read-string (slurp (io/resource "known_types.edn"))))
 
 (def ^{:doc "Given a map of known type -> extension, returns a map of
             extension -> known type."

@@ -8,6 +8,29 @@
   *known-types*
   (read-string (slurp "known_types.edn")))
 
+(def ^{:doc "Given a map of known type -> extension, returns a map of
+            extension -> known type."
+       :tag clojure.lang.APersistentMap}
+  known-types-by-extension
+  (memoize
+    (fn [known-types]
+      (reduce (fn [result [type extensions]]
+        (into result (map #(vec [% type]) extensions))) (sorted-map) known-types))))
+
+(defn extension->known-type
+  ^{:doc "Given an extension, returns a known type definition (or nil)"
+    :tag String}
+  [extension]
+  (let [known-types (known-types-by-extension *known-types*)]
+    (known-types extension)))
+
+(defn filename->known-type
+  ^{:doc "Given a filename, returns a known type definition (or nil)"
+    :tag String}
+  [filename]
+  (let [extension (re-find #"\.[^.]+$" filename)]
+    (extension->known-type extension)))
+
 (def ^{:dynamic true
        :doc "References bundle and package UTI types. Can be bound to
             conforming types to identify bundle extensions."}

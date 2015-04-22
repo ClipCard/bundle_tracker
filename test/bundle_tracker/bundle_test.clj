@@ -25,4 +25,12 @@
     (fact "it overrides select descriptions"
       (binding [overrides/*description* {"Adium chat log" "Overridden"}]
         (let [bundle-types- (ls-dump->bundle-types output)]
-          (bundle-types- "Overridden") => #{".adiumlog" ".chatlog"})))))
+          (bundle-types- "Overridden") => #{".adiumlog" ".chatlog"})))
+
+    (fact "it looks up a known type by extension"
+      (binding [*known-types* {"Adium chat log" #{".adiumlog" ".chatlog"}}]
+        (extension->known-type ".chatlog") => "Adium chat log"))
+
+    (fact "it looks up a known type by extension"
+      (binding [*known-types* {"Adium chat log" #{".adiumlog" ".chatlog"}}]
+        (filename->known-type "foo.adiumlog") => "Adium chat log"))))

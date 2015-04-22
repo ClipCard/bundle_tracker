@@ -1,4 +1,4 @@
-(defproject bundle_tracker "0.1.1"
+(defproject bundle_tracker "0.2"
   :description "Tracks Mac OS X bundle and package folder types"
   :license {}
   :main bundle-tracker.core

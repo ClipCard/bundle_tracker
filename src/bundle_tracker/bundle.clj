@@ -1,12 +1,36 @@
 (ns bundle-tracker.bundle
-  (:require [bundle-tracker.launch-services :as ls]
+  (:require [clojure.java.io :as io]
+            [bundle-tracker.launch-services :as ls]
             [bundle-tracker.overrides :as overrides]))
 
 (def ^{:dynamic true
        :doc "Refers current state of known types. This state will be used
             to produce additive changes as users run the project."}
   *known-types*
-  (read-string (slurp "known_types.edn")))
+  (read-string (slurp (io/resource "known_types.edn"))))
+
+(def ^{:doc "Given a map of known type -> extension, returns a map of
+            extension -> known type."
+       :tag clojure.lang.APersistentMap}
+  known-types-by-extension
+  (memoize
+    (fn [known-types]
+      (reduce (fn [result [type extensions]]
+        (into result (map #(vec [% type]) extensions))) (sorted-map) known-types))))
+
+(defn extension->known-type
+  ^{:doc "Given an extension, returns a known type definition (or nil)"
+    :tag String}
+  [extension]
+  (let [known-types (known-types-by-extension *known-types*)]
+    (known-types extension)))
+
+(defn filename->known-type
+  ^{:doc "Given a filename, returns a known type definition (or nil)"
+    :tag String}
+  [filename]
+  (let [extension (re-find #"\.[^.]+$" filename)]
+    (extension->known-type extension)))
 
 (def ^{:dynamic true
        :doc "References bundle and package UTI types. Can be bound to

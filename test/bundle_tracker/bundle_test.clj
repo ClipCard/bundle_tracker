@@ -27,10 +27,9 @@
         (let [bundle-types- (ls-dump->bundle-types output)]
           (bundle-types- "Overridden") => #{".adiumlog" ".chatlog"})))
 
-    (fact "it looks up a known type by extension"
+    (fact "it looks up a known type by filename"
       (binding [*known-types* {"Adium chat log" #{".adiumlog" ".chatlog"}}]
-        (extension->known-type ".chatlog") => "Adium chat log"))
-
-    (fact "it looks up a known type by extension"
-      (binding [*known-types* {"Adium chat log" #{".adiumlog" ".chatlog"}}]
-        (filename->known-type "foo.adiumlog") => "Adium chat log"))))
+        (filename->known-type "foo.adiumlog") => "Adium chat log"
+        (filename->known-type "/this/presumably/supports/paths.adiumlog")
+        => "Adium chat log"
+        (filename->known-type "/there/is/no.match") => nil))))

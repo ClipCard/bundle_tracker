@@ -70,7 +70,7 @@ You can view the current listing of known types in the following formats:
 
 - [EDN](resources/known_types.edn)
 - [JSON](resources/known_types.json)
-- [Markdown](resources/known_types.md)
+- [Markdown](resources/KNOWN_TYPES.md)
 
 ## License ##
 

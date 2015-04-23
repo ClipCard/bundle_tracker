@@ -32,4 +32,9 @@
         (filename->known-type "foo.adiumlog") => "Adium chat log"
         (filename->known-type "/this/presumably/supports/paths.adiumlog")
         => "Adium chat log"
-        (filename->known-type "/there/is/no.match") => nil))))
+        (filename->known-type "/there/is/no.match") => nil))
+
+    (fact "it determines a path's containing bundle type"
+      (binding [*known-types* {"Application" #{".app"}}]
+        (path->containing-type "/Applications/Foo.app/Contents/Info.plist")
+        => "Application"))))

@@ -1,5 +1,6 @@
 (ns bundle-tracker.bundle
   (:require [clojure.java.io :as io]
+            [clojure.string :as string]
             [bundle-tracker.launch-services :as ls]
             [bundle-tracker.overrides :as overrides]))
 
@@ -31,6 +32,22 @@
   [filename]
   (let [extension (re-find #"\.[^.]+$" filename)]
     (extension->known-type extension)))
+
+(defn path->segments
+  ^{:doc "Given a file path, returns a vector of path segments"
+    :tag clojure.lang.APersistentVector}
+  [path]
+  (string/split path #"/"))
+
+(defn path->containing-type
+  ^{:doc "Given a file path, returns a known type for a containing directory (or nil)"
+    :tag String}
+  [path]
+  (->> path
+       path->segments
+       butlast
+       (filter #(re-find #"\." %))
+       (some filename->known-type)))
 
 (def ^{:dynamic true
        :doc "References bundle and package UTI types. Can be bound to

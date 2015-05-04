@@ -1,4 +1,4 @@
-(defproject bundle_tracker "0.9"
+(defproject bundle_tracker "0.9.1"
   :url "https://github.com/ClipCard/bundle_tracker"
   :description "Tracks Mac OS X bundle and package folder types"
   :license {:name "MIT License"

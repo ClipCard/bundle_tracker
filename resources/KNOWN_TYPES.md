@@ -5,6 +5,7 @@ Description                                     | Extensions
 1Password 3 Agile Keychain                      | `.agilekeychain`                  
 1Password Vault                                 | `.opvault`                        
 AVCHD Collection                                | `.avchd`                          
+Acorn Plugin                                    | `.acplugin`                       
 Adium Dock icon pack                            | `.adiumicon`                      
 Adium Libpurple plug-in                         | `.adiumlibpurpleplugin`           
 Adium WebKit Message View style                 | `.adiummessagestyle`              
@@ -27,10 +28,20 @@ Automator Action                                | `.action`
 Automator Conversion Action                     | `.caction`                        
 Automator Data Type Definition                  | `.definition`                     
 Automator Workflow Document                     | `.workflow`                       
+BBEdit language module                          | `.bblm`                           
+Boxer game state                                | `.boxerstate`                     
 Bundle                                          | `.bundle`                         
 Capo Document                                   | `.capobundle`                     
+Coda Completion Plug-in                         | `.codacompletion`                 
+Coda Plug-in                                    | `.codaplugin`                     
+Coda Pop                                        | `.codapop`                        
+Coda Sidebar Plug-in                            | `.codasidebar`                    
+Coda Syntax Mode                                | `.mode`                           
+Coda Webscript Sidebar Plug-in                  | `.codawebscriptsidebar`           
+Crash Point File                                | `.xccrashpoint`                   
 Dashboard widget                                | `.wdgt`                           
 Drummer Library                                 | `.glibb`                          
+Electronic Publication (iBooks)                 | `.ibooks`                         
 Electronic Publication Folder (ePub)            | `.epub`                           
 Electronic Publication Folder (iBooks)          | `.ibooks`                         
 Final Cut Pro Cache                             | `.fcpcache`                       
@@ -52,6 +63,7 @@ Keynote theme                                   | `.kth`
 Localized PDF                                   | `.lpdf`                           
 Logic Project                                   | `.logic`                          
 Logic X Project                                 | `.logicx`                         
+MS-DOS gamebox                                  | `.boxer`, `.dosbox`               
 Magic GarageBand Template                       | `.wand`                           
 MagicMentor GarageBand Template                 | `.mwand`                          
 Mail Stationery                                 | `.mailstationery`                 
@@ -63,6 +75,7 @@ MainStage Workspace Grouped Control             | `.mob`
 Microsoft Excel type library                    | `.tlb`                            
 Migrated Aperture Library                       | `.migratedaplibrary`              
 Migrated Photo Library                          | `.migratedphotolibrary`           
+Migrated iPhoto Library                         | `.migratedphotolibrary`           
 Numbers Spreadsheet                             | `.numbers-tef`, `.numbers`        
 Numbers Template                                | `.nmbtemplate`                    
 Numbers document                                | `.numbers-tef`, `.numbers`        
@@ -78,6 +91,7 @@ Paparazzi! Bookmark Importer                    | `.pzbmi`
 Parallels VM package                            | `.pvm`                            
 Pass                                            | `.pkpass`                         
 Photo Library                                   | `.photolibrary`                   
+Photos Library                                  | `.photoslibrary`                  
 Plug-in                                         | `.plugin`                         
 PlugInKit plug-in                               | `.pluginkit`                      
 QuickLook preview generator                     | `.qlgenerator`                    
@@ -93,6 +107,7 @@ Sequel Pro Session                              | `.spfs`
 Simulator Device Type                           | `.simdevicetype`                  
 Simulator Runtime                               | `.simruntime`                     
 Sketch Drawing                                  | `.sketch`                         
+Sketch Plugin                                   | `.sketchplugin`                   
 Skype Chat Style                                | `.skypechatstyle`                 
 Skype Emoticon Set                              | `.skypeemoticonset`               
 SparkAction                                     | `.spact`                          
@@ -101,6 +116,7 @@ Sparse Disk Image Bundle                        | `.sparsebundle`
 Spotlight importer                              | `.mdimporter`                     
 System Menu Extra                               | `.menu`                           
 System Preference pane                          | `.prefpane`                       
+TextBundle                                      | `.textbundle`                     
 TextMate Bundle                                 | `.tmbundle`                       
 TextMate PlugIn                                 | `.tmplugin`                       
 TinkerTool Plug-in                              | `.ttplugin`                       

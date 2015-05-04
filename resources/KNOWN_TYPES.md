@@ -43,7 +43,6 @@ Dashboard widget                                | `.wdgt`
 Drummer Library                                 | `.glibb`                          
 Electronic Publication (iBooks)                 | `.ibooks`                         
 Electronic Publication Folder (ePub)            | `.epub`                           
-Electronic Publication Folder (iBooks)          | `.ibooks`                         
 Final Cut Pro Cache                             | `.fcpcache`                       
 Final Cut Pro Library                           | `.fcpbundle`                      
 Framework                                       | `.framework`                      
@@ -74,7 +73,6 @@ MainStage Patch                                 | `.patch`
 MainStage Workspace Grouped Control             | `.mob`                            
 Microsoft Excel type library                    | `.tlb`                            
 Migrated Aperture Library                       | `.migratedaplibrary`              
-Migrated Photo Library                          | `.migratedphotolibrary`           
 Migrated iPhoto Library                         | `.migratedphotolibrary`           
 Numbers Spreadsheet                             | `.numbers-tef`, `.numbers`        
 Numbers Template                                | `.nmbtemplate`                    
